@@ -7,10 +7,10 @@ class Program
     {
         Console.WriteLine("Hello World! This is the Exercise2 Project.");
         Console.WriteLine();
-        
+
         string letter = "";
         string article = "";
-        string symbol = "";        
+        string symbol = "";
 
         Console.Write("What is your grade percentage?: ");
         int percentage = int.Parse(Console.ReadLine());
@@ -19,25 +19,25 @@ class Program
 
         //-----------------------------------------------------------------
         if (percentage >= 90)
-         {
+        {
             letter = "A";
-         }
-         else if (percentage >= 80)
-         {
+        }
+        else if (percentage >= 80)
+        {
             letter = "B";
-         }
-         else if (percentage >= 70)
-         {
+        }
+        else if (percentage >= 70)
+        {
             letter = "C";
-         }
-         else if (percentage >= 60)
-         {
+        }
+        else if (percentage >= 60)
+        {
             letter = "D";
-         }
-         else
-         {
+        }
+        else
+        {
             letter = "F";
-         }
+        }
 
         //Stretch #1
         if (lastDigit >= 7)
@@ -48,7 +48,7 @@ class Program
         {
             symbol = "-";
         }
-        else 
+        else
         {
             symbol = "";
         }
@@ -60,24 +60,24 @@ class Program
             {
                 symbol = "-";
             }
-            else 
+            else
             {
                 symbol = "";
             }
             article = "an";
             Console.WriteLine($"You got {article} {letter}{symbol}");
         }
-        else if (letter == "F") 
+        else if (letter == "F")
         {
             article = "an";
-            Console.WriteLine($"You got {article} {letter}");   
+            Console.WriteLine($"You got {article} {letter}");
         }
-        else 
+        else
         {
             article = "a";
             Console.WriteLine($"You got {article} {letter}{symbol}");
         }
-        
+
         if (letter == "A" || letter == "B" || letter == "C")
         {
             Console.Write("Congrats. You passed!");
