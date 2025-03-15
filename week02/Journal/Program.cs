@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 
-/*I decided to save the entries in a CSV file. I had to make some research about many things
+/*I decided to save the entries in a CSV file. I had to do my research about things
 I didn't understand: how to use StreamWriter and StreamReader, even though I used just one of them in the Journal.cs file.*/
 
 class Program
