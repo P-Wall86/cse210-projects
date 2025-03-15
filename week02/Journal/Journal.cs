@@ -20,7 +20,7 @@ public class Journal
         }
     }
 
-    public void SaveToFile(string file)
+    public void SaveToFile(string file)  //I used StreamWriter to create a CSV file.
     {
         using (StreamWriter writer = new StreamWriter(file))
         {
@@ -30,7 +30,7 @@ public class Journal
                 string prompt = EscapeCsvValue(entry._promptText);
                 string entryText = EscapeCsvValue(entry._entryText);
 
-                writer.WriteLine($"{date},{prompt},{entryText}");
+                writer.WriteLine($"{date},{prompt},{entryText}"); //I used a comma to separate values and store data.
             }
         }
     }
@@ -71,13 +71,14 @@ public class Journal
         return value;
     }
 
-    public string[] ParseCsvLine(string line)
+    public string[] ParseCsvLine(string line) //This function was particularly difficult to write since I wasn't much allowed
+                                             //to make a syntax mistake. Correctly parsing a CSV file is a challenge.
     {
         var result = new List<string>();
         bool insideQuote = false;
         string currentField = string.Empty;
 
-        for (int i = 0; i < line.Length; i++)
+        for (int i = 0; i < line.Length; i++) 
         {
             char c = line[i];
 
