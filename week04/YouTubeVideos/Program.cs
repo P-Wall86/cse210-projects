@@ -4,8 +4,6 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello World! This is the YouTubeVideos Project.");
-
         var videos = new List<Video>
         {
             new Video("Pioneer Life Hacks: Surviving the Wild Without WiFi", "Brigham Young", 600),
